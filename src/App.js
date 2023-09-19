@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
+import "./randomQuoteMachine.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="container">
+      <div class="bg">
+        <div id="quote-box">
+          <div id="text"></div>
+          <div id="author"></div>
+          <div id="buttons" class="text-center">
+            <a id="new-quote" class="btn btn-lg btn-success">
+              New Quote
+            </a>
+            <a
+              id="tweet-quote"
+              class="btn btn-lg btn-primary"
+              href="#"
+              target="_blank"
+            >
+              Tweet Quote
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
